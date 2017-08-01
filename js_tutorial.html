@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="js_tutorial.js"></script>
+    <!--<script src="js_tutorial.js"></script>-->
     <style type="text/css">
         body{font-size: 1.6em;}
         .hidden{display: none;}
@@ -266,6 +266,107 @@ document.write("3 * 15 = ", multiply(triple,15), "<br />"); //function expressio
 
 
     document.write("factorial of 5 = ", factorial(5),"<br />");*/
+
 </script>
+
+
+<a href="JavaScript:void(0)" onclick="alert('Hello');" >Say Hello</a><br />
+<a href="JavaScript:void(0)" onclick="openAlert('Hi how are you');" >Say Something</a><br />
+
+<a href="JavaScript:void(0)"
+   onmouseover="this.style.color='red';"
+   onmouseout="this.style.color='blue'"
+   ondblclick="this.text='You Double clicked it'"
+   onmousedown="this.text='Don\'t press to hard'"
+   onmouseup="this.text='Thank you'">Make me red</a><br />
+
+
+<form action="#" id="sampForm">
+    <input id="charInput" type="text">
+    <p id="keyData">Key Data Here</p>
+    <input type="submit" value="submit">
+    <input type="reset"  value="reset">
+</form><br />
+<img src="ntt-logo.png" class="hidden"  id="logo">
+<button id="logoButton">Get Logo</button><br />
+<input id='mouseInput' type="text" size="30"><br />
+Mouse X: <input type="text" id="mouseX" ><br />
+Mouse y:<input type="text" id="mouseY" ><br />
+<button id="clear" >Clear all in input fields</button>
+
+<script>
+    function getchar(event) {
+        if(event.which == null){
+            return String.fromCharCode(event.keyCode);
+        }   else if (event.which !=0 && event.charCode !=0){
+            return String.fromCharCode(event.which);
+        }   else {
+            return null;
+        }
+
+      }
+
+      document.getElementById("charInput").onkeypress =
+          function(event){
+        var char = getchar(event || window.event);
+        if(!char) return false;
+              document.getElementById('keyData').innerHTML = char + " was clicked";
+              return true;
+          };
+
+
+          document.getElementById("charInput").onfocus = function (event) {
+                  document.getElementById("keyData").innerHTML = "now this is some serious thing";
+           };
+
+    document.getElementById("charInput").onselect = function (event) {
+        document.getElementById("keyData").innerHTML = "Text got selected";
+    };
+
+    document.getElementById("logoButton").onclick = function (event) {
+        document.getElementById("logo").className = "show";
+    };
+
+document.getElementById("logo").onmouseover = function (event) {
+    document.getElementById("logo").src = "logo_1.png";
+    document.getElementById("mouseInput").value = "It is new image which gets change on hover";
+};
+
+
+    document.getElementById("logo").onmouseout = function (event) {
+        document.getElementById("logo").src = "ntt-logo.png";
+        document.getElementById("mouseInput").value = "It is default image";
+
+    };
+
+    document.body.onmousemove = function (e) {
+        e = e || window.event;
+
+        var pageX = e.pageX;
+        var pageY = e.pageY;
+
+
+        if((pageX === undefined) || (pageY === undefined) ){
+            pageX = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+            pageY = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
+        }
+
+        document.getElementById('mouseX').value = pageX;
+        document.getElementById('mouseY').value = pageY;
+    };
+
+    document.getElementById("clear").onclick = function (event) {
+        var elements = document.getElementsByTagName("input");
+        for(var j=0; j < elements.length ; j++){
+
+            if(elements[j].type === "text"){
+                elements[j].value = "";
+            }
+
+        }
+    };
+
+</script>
+
 </body>
 </html>
