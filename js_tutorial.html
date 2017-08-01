@@ -65,6 +65,7 @@ document.write("Converted String : ", Number("3.14"), "<br />");
 document.write("Converted Int : ", parseInt("5"), "<br />")
 document.write("Converted Float : =", parseFloat("3.14"), "<br />");
 */
+/*
 
 var randStr = "A long " + "string that " + "goes on and on";
 document.write("String length ", randStr.length + "<br />");
@@ -92,6 +93,51 @@ document.write("small : ", strToStyle.small(),"<br />");
 document.write("strike : ", strToStyle.strike(),"<br />");
 document.write("sub : ", strToStyle.sub(),"<br />");
 document.write("sup : ", strToStyle.sup(),"<br />");
+*/
+/* conditional and relational operators */
+/*
+var age = 5;
+if((age >=5) && (age <=6)){
+    document.write("Go to Kindergarten" + "<br />");
+} else if (age > 18){
+    document.write("go to college" + "<br />");
+} else{
+    document.write("Go to Grade ", age - 5, "<br />");
+}
+
+document.write("true || false ", true || false , "<br />");
+
+document.write("!true ", !true , "<br />");
+
+document.write("\"5\" == 5 = ",("5" == 5),"<br />");
+document.write("\"5\" === 5 = ", ("5" === 5) , "<br />");
+*/
+
+/* switch case */
+/*
+
+var age = 10;
+switch (age){
+    case 5 :
+    case 6 :
+        document.write("Go to Kindergarten" + "<br />" );
+        break;
+
+    case 7 :
+        document.write("Go to 1st grade" + "<br />");
+        break;
+
+    default :
+        document.write("Subtract 5 from your age");
+}
+*/
+
+/* conditional operator */
+/*
+var age = 5;
+var canIVote = (age >= 18) ? true : false ; // (age >=18)
+document.write("let see you can vote or not , and here is your answer ", canIVote, "<br />");
+*/
 
 
 </script>
