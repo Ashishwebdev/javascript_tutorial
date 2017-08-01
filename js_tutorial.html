@@ -171,16 +171,16 @@ for (k in customer){
 }
 */
 
-
+/* //arrays and some functions
 var tomSmith = ["Tom Smith", "123 Main" , 120.50];
 document.write("1st Index ", tomSmith[0], "<br />");
 tomSmith[3] = "tsmith@gmail.com";
 
 tomSmith.splice(2, 1, "Pittsburgh", "PA"); //overwrite and displace
 
-/*
+/!*
 document.write("after 1st splice at 2nd index", tomSmith[2], "<br />");
-*/
+*!/
 
 tomSmith.splice(4,1); // deletes the value at fourth index
 
@@ -196,7 +196,7 @@ tomSmith.shift();
 tomSmith.unshift("Tom Smith");
 for(i =0; i < tomSmith.length; i++){
     document.write(tomSmith[i], "<br />");
-}
+}*/
 
 /*
 //converting string to array
@@ -210,6 +210,62 @@ for(i =0; i < tomSmith.length; i++){
 
  document.write("Num Array : ", numbers.toString(), "<br />")
 */
+
+ /*example of function*/
+ /*function inArray(arrayToCheck, value) {
+     for(i = 0; i < arrayToCheck.length; i++){
+         if(arrayToCheck[i] === value){
+             return true;
+         }
+     }
+
+     return false;
+ }
+
+ var randArray = [1,2,3,4,5,6];
+ document.write("in array ", inArray(randArray,4), "<br />");
+*/
+
+ /*function times2(num) {
+     var var2 = 2;
+     return num * var2;
+ }
+
+ var triple = function times3(num) {
+     return num * 3;
+ }
+
+ function multiply(func, num) {
+     return func(num);
+ }
+
+
+ document.write("2 * 15 = ", multiply(times2,15) , "<br />");
+document.write("3 * 15 = ", multiply(triple,15), "<br />"); //function expression
+
+
+    function getSum() {
+        var sum = 0 ;
+        for (i =0; i < arguments.length; i++ ){
+            sum += arguments[i];
+        }
+        return sum;
+    }
+
+    document.write("Sum = ", getSum(1,2,3,4,5,6,7), "<br />");
+
+    function factorial (num) {
+
+        if (num <= 1){
+            return 1;
+        }
+        else{
+            return num * factorial(num -1);
+        }
+    }
+
+
+    document.write("factorial of 5 = ", factorial(5),"<br />");*/
 </script>
 </body>
 </html>
