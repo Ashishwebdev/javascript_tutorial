@@ -269,7 +269,8 @@ document.write("3 * 15 = ", multiply(triple,15), "<br />"); //function expressio
 
 </script>
 
-
+<!--
+//Event handling(very imp)
 <a href="JavaScript:void(0)" onclick="alert('Hello');" >Say Hello</a><br />
 <a href="JavaScript:void(0)" onclick="openAlert('Hi how are you');" >Say Something</a><br />
 
@@ -293,9 +294,31 @@ document.write("3 * 15 = ", multiply(triple,15), "<br />"); //function expressio
 Mouse X: <input type="text" id="mouseX" ><br />
 Mouse y:<input type="text" id="mouseY" ><br />
 <button id="clear" >Clear all in input fields</button>
+-->
+
+<!-- ---------- ELEMENT STYLING ---------- -->
+<!-- See all of them here http://www.w3schools.com/jsref/dom_obj_style.asp -->
+
+<div id="sampDiv">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget turpis eget quam luctus malesuada ut ac nulla.
+    Suspendisse fermentum magna neque, a auctor felis pretium eget. Fusce ornare feugiat magna, ut faucibus sapien congue ut.
+    Nunc nec fringilla ex, nec varius nisl. Ut eget laoreet nisi. Aenean quis venenatis mauris, at volutpat ante. Donec sollicitudin lacinia ornare.
+    In quis accumsan ligula, id egestas enim.
+</div>
+
+<button id="chgBkColor">Background Color</button>
+<button id="chgBkImg">Background Image</button>
+<button id="chgBorderStyle">Border Style</button>
+<button id="chgBorderWidth">Border Width</button>
+<button id="chgBorderColor">Border Color</button>
+
+<button id="goToGoogle" >Go to Google</button>
+<button id="forwardPage" >Forward Page</button>
+<button id="backPage" >Back Page</button>
+<button id="reload" >Reload Page</button>
 
 <script>
-    function getchar(event) {
+   /* function getchar(event) {
         if(event.which == null){
             return String.fromCharCode(event.keyCode);
         }   else if (event.which !=0 && event.charCode !=0){
@@ -364,7 +387,52 @@ document.getElementById("logo").onmouseover = function (event) {
             }
 
         }
-    };
+    };*/
+
+   document.getElementById("chgBkColor").onclick = function (event) {
+       document.getElementById("sampDiv").style.backgroundColor = '#E45';
+   };
+document.getElementById("chgBorderStyle").onclick = function (event) {
+       document.getElementById("sampDiv").style.borderStyle = "solid" ;
+};
+   document.getElementById("chgBorderWidth").onclick = function (event) {
+       document.getElementById("sampDiv").style.borderWidth = "thick" ;
+   };
+
+   document.getElementById('chgBorderColor').onclick = function(event) {
+       document.getElementById('sampDiv').style.borderColor = "blue";
+   };
+
+   //Manipulating the DOM
+
+    document.write("Current URL : ", window.location.href, "<br />");
+   document.write("Current Host : ", window.location.hostname, "<br />");
+   document.write("Current Path : ", window.location.pathname, "<br />");
+
+document.getElementById('goToGoogle').onclick = function(event){
+    window.location.href = "https://www.google.co.in";
+};
+
+document.getElementById('forwardPage').onclick = function (event) {
+ history.forward();
+};
+
+document.getElementById('backPage').onclick = function (event) {
+  history.back();
+};
+
+document.getElementById('reload').onclick = function (event) {
+    window.location.reload(true);
+};
+
+   // Add a p element after setting an attribute and text
+   var paragraph3 = document.createElement("p");
+
+   paragraph3.setAttribute("id", "paragraph3");
+
+   paragraph3.innerHTML = "Proin eget turpis eget quam luctus malesuada ut ac nulla.";
+
+   sampDiv.appendChild(paragraph3);
 
 </script>
 
