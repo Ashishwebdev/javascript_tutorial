@@ -18,8 +18,8 @@
       <file leaf-file-name="js_tutorial.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js_tutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="473" column="0" lean-forward="true" selection-start-line="473" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
+            <state relative-caret-position="302">
+              <caret line="510" column="6" lean-forward="true" selection-start-line="510" selection-start-column="6" selection-end-line="510" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -52,16 +52,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="710" />
-    <option name="y" value="101" />
-    <option name="width" value="535" />
-    <option name="height" value="580" />
+    <option name="x" value="67" />
+    <option name="y" value="-4" />
+    <option name="width" value="1299" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -74,24 +74,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript_tutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript_tutorial" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -295,15 +278,15 @@
       <option name="presentableId" value="Default" />
       <updated>1501483063459</updated>
       <workItem from="1501483066965" duration="31081000" />
-      <workItem from="1501681394874" duration="2405000" />
+      <workItem from="1501681394874" duration="4167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33486000" />
+    <option name="totallyTimeSpent" value="35248000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="710" y="101" width="535" height="580" extended-state="0" />
+    <frame x="67" y="-4" width="1299" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -347,8 +330,8 @@
     <entry file="file://$PROJECT_DIR$/T_haraveker.text" />
     <entry file="file://$PROJECT_DIR$/js_tutorial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="473" column="0" lean-forward="true" selection-start-line="473" selection-start-column="0" selection-end-line="473" selection-end-column="0" />
+        <state relative-caret-position="302">
+          <caret line="510" column="6" lean-forward="true" selection-start-line="510" selection-start-column="6" selection-end-line="510" selection-end-column="6" />
           <folding />
         </state>
       </provider>
