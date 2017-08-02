@@ -18,8 +18,8 @@
       <file leaf-file-name="js_tutorial.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js_tutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="510" column="6" lean-forward="true" selection-start-line="510" selection-start-column="6" selection-end-line="510" selection-end-column="6" />
+            <state relative-caret-position="522">
+              <caret line="623" column="4" lean-forward="false" selection-start-line="623" selection-start-column="4" selection-end-line="623" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -278,12 +278,12 @@
       <option name="presentableId" value="Default" />
       <updated>1501483063459</updated>
       <workItem from="1501483066965" duration="31081000" />
-      <workItem from="1501681394874" duration="4167000" />
+      <workItem from="1501681394874" duration="5517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35248000" />
+    <option name="totallyTimeSpent" value="36598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-4" width="1299" height="772" extended-state="6" />
@@ -291,7 +291,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -330,8 +330,8 @@
     <entry file="file://$PROJECT_DIR$/T_haraveker.text" />
     <entry file="file://$PROJECT_DIR$/js_tutorial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="510" column="6" lean-forward="true" selection-start-line="510" selection-start-column="6" selection-end-line="510" selection-end-column="6" />
+        <state relative-caret-position="522">
+          <caret line="623" column="4" lean-forward="false" selection-start-line="623" selection-start-column="4" selection-end-line="623" selection-end-column="4" />
           <folding />
         </state>
       </provider>
