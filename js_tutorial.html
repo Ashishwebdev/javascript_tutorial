@@ -299,6 +299,7 @@ Mouse y:<input type="text" id="mouseY" ><br />
 <!-- ---------- ELEMENT STYLING ---------- -->
 <!-- See all of them here http://www.w3schools.com/jsref/dom_obj_style.asp -->
 
+<!--
 <div id="sampDiv">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget turpis eget quam luctus malesuada ut ac nulla.
     Suspendisse fermentum magna neque, a auctor felis pretium eget. Fusce ornare feugiat magna, ut faucibus sapien congue ut.
@@ -316,6 +317,7 @@ Mouse y:<input type="text" id="mouseY" ><br />
 <button id="forwardPage" >Forward Page</button>
 <button id="backPage" >Back Page</button>
 <button id="reload" >Reload Page</button>
+-->
 
 <script>
    /* function getchar(event) {
@@ -389,6 +391,8 @@ document.getElementById("logo").onmouseover = function (event) {
         }
     };*/
 
+/*
+//DOM Modulation
    document.getElementById("chgBkColor").onclick = function (event) {
        document.getElementById("sampDiv").style.backgroundColor = '#E45';
    };
@@ -433,8 +437,59 @@ document.getElementById('reload').onclick = function (event) {
    paragraph3.innerHTML = "Proin eget turpis eget quam luctus malesuada ut ac nulla.";
 
    sampDiv.appendChild(paragraph3);
+*/
+
+
+// object oriented programming
+
+    var cust1 = {
+        name: "john Smith",
+        street: "123 Main",
+        city: "Pittsburgh",
+        state: "PA",
+        email: "jsmith@aol.com",
+        balance: 120.50,
+        payDownBal: function(amtPaid){
+            this.balance -= amtPaid;
+        },
+        addToBal: function(amtCharged){
+            this.balance +=amtCharged;
+        }
+    };
+
+    document.write("cust1:  ", cust1, "<br />");
+    document.write("Customer name: ", cust1.name, "<br />");
+
+    for(var prop in cust1){
+        if(cust1.hasOwnProperty(prop)){
+            document.write(prop, "<br />");
+        }
+
+    }
+    cust1.street = "512 main";
+   document.write("Customer changed addres: ", cust1.street);
+
+   document.write("name in cust1 : ", "name" in cust1, "<br />");
+
+   function getInfo(cust) {
+       return cust1.name + "lives at " + cust1.street + " in " + cust1.city + " " + cust1.state + " email :  " + cust1.email + " and has a balance of Rs " + cust1.balance;
+   }
+
+
+
+   document.write(getInfo(cust1), "<br />");
+   cust1.payDownBal(20.50);
+   cust1.addToBal(10.00);
+
+   document.write(getInfo(cust1), "<br />");
+
+
 
 </script>
 
 </body>
 </html>
+
+
+
+
