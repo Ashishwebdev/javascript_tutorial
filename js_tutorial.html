@@ -319,13 +319,15 @@ Mouse y:<input type="text" id="mouseY" ><br />
 <button id="reload" >Reload Page</button>
 -->
 
+<!--
+// form validation
 <div>
     Enter your name:
 
-    <!-- When they leave the input send a reference to the input element, and a reference to the hel error span -->
+    &lt;!&ndash; When they leave the input send a reference to the input element, and a reference to the hel error span &ndash;&gt;
     <input id="name" name="name" type="text" size="30" onblur="isTheFieldEmpty(this, document.getElementById('name_help'))" />
     <span id="name_help"></span>
-    <!-- this is the id number for the text box -->
+    &lt;!&ndash; this is the id number for the text box &ndash;&gt;
 </div>
 
 <div>
@@ -357,6 +359,7 @@ Mouse y:<input type="text" id="mouseY" ><br />
     Enter your email:
     <input id="email" name="email" type="text" size="30" onblur="isEmailOk(this, document.getElementById('email_help'))" />
     <span id="email_help"></span>
+-->
 </div>
 
 
@@ -557,7 +560,8 @@ document.getElementById('reload').onclick = function (event) {
 */
 
 
-
+/*
+// form validation
    function editNodeText(regex, input, helpId, helpMessage)
 
    {
@@ -622,7 +626,31 @@ document.getElementById('reload').onclick = function (event) {
        return editNodeText(/^[A-Za-z0-9._-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/, inputField.value, helpId, "Enter an Email (Ex. derekbanas@newthinktank.com)");
 
    }
+*/
 
+//exception handling
+
+    var custArray = ["Tom", "Bob", "Sally", "Sue"];
+
+    var getCust = function(index){
+        if(index > custArray.length ){
+            throw new RangeError("Index must be >=0 and <= " + custArray.length);
+        }else {
+            return custArray[index];
+        }
+    }
+
+
+    try {
+        document.write("Customer : ", getCust(5), "<br />");
+
+    }
+
+    catch (ex){
+        if(ex instanceof RangeError){
+            document.write(ex.message + "<br />");
+        }
+    }
 
 </script>
 
