@@ -8,6 +8,7 @@
  
  <script type="text/javascript" >
      
+/*
      var customer = {
          name: "Tom Smith",
          speak: function () {
@@ -53,30 +54,51 @@
      var person1 = new Person("paul", "123 Main");
      var person2 = new Person("paul", "123 Main");
 
-     document.write("Are they equal " + (person1 === person2), "<br />"); //exact instance can never be equal (memory reference is not equal)
+     document.write("Are they equal " + (person1 === person2)) //exact instance can never be equal (memory reference is not equal)
+*/
 
-     function isequivalent(a, b) {
 
-         var aprops = Object.getOwnPropertyNames(a);
-         var bprops = Object.getOwnPropertyNames(b);
-
-         if(aprops.length !== bprops.length){
-             return false;
+     function Mammal(name) {
+         this.name = name;
+         this.getInfo = function () {
+             return "The mammals name is " + this.name;
          }
-
-         for (var i =0; i < aprops.length; i++ ){
-             var propName = aprops[i];
-         if(a[propName] !== b[propName]){
-             return false;
-         }
-
-         }
-
-         return true;
 
      }
-     console.log("Are they equal " + isequivalent(person1,person2)) ;
 
+
+     Mammal.prototype.sound = "Grrrr";
+
+     Mammal.prototype.makeSound = function () {
+         return this.name + " says " + this.sound;
+
+     };
+
+     var grover = new Mammal("Grover");
+
+     document.write(grover.makeSound() + "<br />");
+
+
+     for(var prop in grover){
+         document.write(prop + " : " + grover[prop] + " <br /> ");
+     }
+
+     document.write("name property of the grover : ", grover.hasOwnProperty("name"), "<br />");
+     document.write("name sound of the grover : ", grover.hasOwnProperty("sound"), "<br />");
+
+
+     Array.prototype.inArray = function inArray (value) {
+         for(var i = 0; i < this.length; i++){
+             if(this[i] === value){
+                 return true;
+             }
+         }
+         return false;
+     };
+
+     var sampArray = [1,2,3,4,5];
+
+     document.write("3 in Array " + sampArray.inArray(3) + "<br />");
 
  </script>
  

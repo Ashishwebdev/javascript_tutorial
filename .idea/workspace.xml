@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32a81404-8f68-4099-9850-0677fc37ca9c" name="Default" comment="" />
+    <list default="true" id="32a81404-8f68-4099-9850-0677fc37ca9c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js_oops_tutorial.html" afterPath="$PROJECT_DIR$/js_oops_tutorial.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +28,8 @@
       <file leaf-file-name="js_oops_tutorial.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js_oops_tutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="77" column="66" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="66" />
+            <state relative-caret-position="434">
+              <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -304,12 +307,12 @@
       <updated>1501483063459</updated>
       <workItem from="1501483066965" duration="31081000" />
       <workItem from="1501681394874" duration="6316000" />
-      <workItem from="1501767575467" duration="3723000" />
+      <workItem from="1501767575467" duration="7337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41120000" />
+    <option name="totallyTimeSpent" value="44734000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="-4" width="1299" height="772" extended-state="6" />
@@ -372,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js_oops_tutorial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="77" column="66" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="66" />
+        <state relative-caret-position="434">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding />
         </state>
       </provider>
