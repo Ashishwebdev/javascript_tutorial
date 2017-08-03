@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> js OOPS</title>
+</head>
+<body>
+ 
+ <script type="text/javascript" >
+     
+     var customer = {
+         name: "Tom Smith",
+         speak: function () {
+             return "My name is " + this.name;
+         },
+         address: {
+             street: '1233 Main St ',
+             city: "Pittsburgh",
+             state: "PA"
+         }
+     } ;
+
+     document.write(customer.speak() + "<br />");
+
+     document.write(customer.name + " lives at " + customer.address.street + "<br />");
+
+     customer.address.country = "US";
+
+     document.write(customer.address.country + "<br />");
+
+     function Person(name, street) {
+         this.name = name;
+         this.street = street;
+         this.info = function(){
+             return "My name is " + this.name + " and i live on " + this.street;
+         }
+     }
+
+     var bobSmith = new Person("Bob smith", "Mera muhalla hai yeh");
+
+
+     document.write(bobSmith.info() + "<br />");
+
+     function changename(person) {
+
+         person.name = "Sue Smith";
+     }
+
+     changename(bobSmith);
+
+     document.write("Bob became " + bobSmith.name + "<br />");
+
+     var person1 = new Person("paul", "123 Main");
+     var person2 = new Person("paul", "123 Main");
+
+     document.write("Are they equal " + (person1 === person2), "<br />"); //exact instance can never be equal (memory reference is not equal)
+
+     function isequivalent(a, b) {
+
+         var aprops = Object.getOwnPropertyNames(a);
+         var bprops = Object.getOwnPropertyNames(b);
+
+         if(aprops.length !== bprops.length){
+             return false;
+         }
+
+         for (var i =0; i < aprops.length; i++ ){
+             var propName = aprops[i];
+         if(a[propName] !== b[propName]){
+             return false;
+         }
+
+         }
+
+         return true;
+
+     }
+     console.log("Are they equal " + isequivalent(person1,person2)) ;
+
+
+ </script>
+ 
+
+
+</body>
+</html>

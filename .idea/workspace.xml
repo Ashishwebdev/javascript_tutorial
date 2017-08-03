@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32a81404-8f68-4099-9850-0677fc37ca9c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js_tutorial.html" afterPath="$PROJECT_DIR$/js_tutorial.html" />
-    </list>
+    <list default="true" id="32a81404-8f68-4099-9850-0677fc37ca9c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +12,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="js_tutorial.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="js_tutorial.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js_tutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="650" column="50" lean-forward="false" selection-start-line="650" selection-start-column="50" selection-end-line="650" selection-end-column="50" />
+            <state relative-caret-position="54">
+              <caret line="628" column="2" lean-forward="true" selection-start-line="628" selection-start-column="2" selection-end-line="628" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js_oops_tutorial.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js_oops_tutorial.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="77" column="66" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -41,6 +49,7 @@
       <list>
         <option value="$PROJECT_DIR$/T_haraveker.text" />
         <option value="$PROJECT_DIR$/js_tutorial.html" />
+        <option value="$PROJECT_DIR$/js_oops_tutorial.html" />
       </list>
     </option>
   </component>
@@ -51,16 +60,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="831" />
-    <option name="y" value="24" />
-    <option name="width" value="535" />
-    <option name="height" value="744" />
+    <option name="x" value="67" />
+    <option name="y" value="-4" />
+    <option name="width" value="1299" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -73,7 +82,24 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript_tutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript_tutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -278,17 +304,18 @@
       <updated>1501483063459</updated>
       <workItem from="1501483066965" duration="31081000" />
       <workItem from="1501681394874" duration="6316000" />
+      <workItem from="1501767575467" duration="3723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37397000" />
+    <option name="totallyTimeSpent" value="41120000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="831" y="24" width="535" height="744" extended-state="4" />
+    <frame x="67" y="-4" width="1299" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -326,11 +353,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js_tutorial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/T_haraveker.text" />
     <entry file="file://$PROJECT_DIR$/js_tutorial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="650" column="50" lean-forward="false" selection-start-line="650" selection-start-column="50" selection-end-line="650" selection-end-column="50" />
+        <state relative-caret-position="54">
+          <caret line="628" column="2" lean-forward="true" selection-start-line="628" selection-start-column="2" selection-end-line="628" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js_oops_tutorial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="77" column="66" lean-forward="false" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="66" />
           <folding />
         </state>
       </provider>
