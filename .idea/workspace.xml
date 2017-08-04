@@ -28,8 +28,8 @@
       <file leaf-file-name="js_oops_tutorial.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js_oops_tutorial.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+            <state relative-caret-position="314">
+              <caret line="189" column="53" lean-forward="false" selection-start-line="189" selection-start-column="53" selection-end-line="189" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -63,7 +63,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="716" />
+    <option name="x" value="667" />
     <option name="y" value="24" />
     <option name="width" value="650" />
     <option name="height" value="744" />
@@ -308,15 +308,15 @@
       <workItem from="1501483066965" duration="31081000" />
       <workItem from="1501681394874" duration="6316000" />
       <workItem from="1501767575467" duration="7337000" />
-      <workItem from="1501851616709" duration="1460000" />
+      <workItem from="1501851616709" duration="4592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46194000" />
+    <option name="totallyTimeSpent" value="49326000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="716" y="24" width="650" height="744" extended-state="4" />
+    <frame x="667" y="24" width="650" height="744" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.031456955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -392,8 +392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js_oops_tutorial.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        <state relative-caret-position="314">
+          <caret line="189" column="53" lean-forward="false" selection-start-line="189" selection-start-column="53" selection-end-line="189" selection-end-column="53" />
           <folding />
         </state>
       </provider>
