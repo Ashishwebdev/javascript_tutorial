@@ -56,8 +56,9 @@
 
      document.write("Are they equal " + (person1 === person2)) //exact instance can never be equal (memory reference is not equal)
 */
+/*
 
-
+// prototype
      function Mammal(name) {
          this.name = name;
          this.getInfo = function () {
@@ -99,6 +100,39 @@
      var sampArray = [1,2,3,4,5];
 
      document.write("3 in Array " + sampArray.inArray(3) + "<br />");
+*/
+
+
+
+function SecretCode() {
+    var secretNum = 78;
+
+    this.guessNum = function(num){
+
+
+        if(num > 78){
+            return "Lower";
+        } else if (num < 78){
+            return "Higher"
+        } else {
+            return "You guessed it";
+        }
+
+    };
+    this.secretNumAvail = function () {
+    return secretNum;
+    }
+
+}
+
+var secret = new SecretCode();
+
+document.write("trying to access within an object ", secret.secretNum, "<br />" );
+
+
+document.write("Is 78 the number : " + secret.guessNum(78), "<br />");
+
+
 
  </script>
  
