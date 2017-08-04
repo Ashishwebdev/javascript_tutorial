@@ -154,6 +154,7 @@ Object.__defineGetter__.call(Coordinates.prototype, "getCoords", function () {
 
 
 */
+/*
 
 // latest version of defining getter and setter
 
@@ -184,7 +185,7 @@ Object.__defineGetter__.call(Coordinates.prototype, "getCoords", function () {
 
      var Circle = function (radius) {
          this._radius = radius;
-     }
+     };
 
      Circle.prototype = {
          set radius(radius) {this._radius = radius;},
@@ -197,6 +198,90 @@ Object.__defineGetter__.call(Coordinates.prototype, "getCoords", function () {
      circ.radius = 15;
 
      document.write("A circle with radius " + circ.radius + " has an area of " + circ.area.toFixed(2), "<br />");
+*/
+
+// Intro of Inheritance
+function Animal() {
+    this.name = "Animal";
+    this.toString = function () {
+        return "My name is " + this.name ; 
+    };
+}
+
+function Canine(){
+    this.name = "Canine";
+}
+
+function Wolf() {
+    this.name = "wolf";
+}
+
+Canine.prototype = new Animal();
+Wolf.prototype = new Canine();
+
+Canine.prototype.constructor = Canine;
+Wolf.prototype.constructor =Wolf;
+
+var arcticWolf = new Wolf();
+
+document.write(arcticWolf.toString() + "<br />")
+
+document.write("Wolf instance of Animal ", arcticWolf instanceof Animal, "<br />");
+
+Animal.prototype.source ="Grrrrrr";
+Animal.prototype.getSound = function () {
+    return this.name + " says " + this.sound;
+};
+
+Canine.prototype.sound = "Woof";
+Wolf.prototype.sound = "Grrr Woof";
+
+document.write(arcticWolf.getSound() + "<br />");
+
+
+
+function Rodent() {
+    this.name = "Rodent";
+}
+
+
+function Rat() {
+    this.name = "Rat";
+}
+
+
+Rodent.prototype = new Animal();
+Rat.prototype = Rodent.prototype;
+
+
+Rodent.prototype.constructor = Rodent;
+Rat.prototype.constructor = Rat;
+
+var rat = new Rat();
+
+document.write(rat.toString(),"<br />");
+
+
+function extend(Child, Parent) {
+    var Temp = function () {};
+
+    Temp.prototype = Parent.prototype;
+    Child.prototype = new Temp() ;
+
+    Child.prototype.constructor = Child;
+
+}
+
+function Deer() {
+    this.name = "Deer";
+    this.sound = "Snort";
+}
+
+extend(Deer, Animal);
+
+var elk =  new Deer();
+
+document.write(elk.getSound() + "<br />");
 
 
  </script>
