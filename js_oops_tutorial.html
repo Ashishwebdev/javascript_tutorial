@@ -261,7 +261,7 @@ var rat = new Rat();
 
 document.write(rat.toString(),"<br />");
 
-
+// ---------- INTERMEDIATE FUNCTION INHERITANCE ----------
 function extend(Child, Parent) {
     var Temp = function () {};
 
@@ -282,6 +282,73 @@ extend(Deer, Animal);
 var elk =  new Deer();
 
 document.write(elk.getSound() + "<br />");
+
+
+
+// ---------- CALL PARENT METHODS ----------
+
+     function Vehicle(name) {
+         this.name = name;
+     }
+
+     Vehicle.prototype = {
+         drive: function () {
+             return this.name + " drives forward ";
+         },
+         stop: function () {
+             return this.name + " stops";
+         }
+     };
+
+     function Truck(name) {
+         this.name = name;
+     }
+
+
+
+     Truck.prototype = new Vehicle();
+     Truck.prototype.constructor = Truck;
+     Truck.prototype.drive = function () {
+
+         var driveMsg = Vehicle.prototype.drive.apply(this);
+         return driveMsg += " through a field";
+     };
+
+
+     var jeep = new Truck("jeep");
+
+     document.write(jeep.drive() + "<br />");
+
+     document.write(jeep.stop() + "<br />");
+
+
+// ---------- SINGLETON PATTERN ----------
+// Singletons are used when you only ever want 1 object to
+// be created
+// Let's say you want to create a game character with fixed
+// stats
+function Hero(name){
+
+    // Check if the object exists
+    if(typeof Hero.instance === 'object'){
+
+        // If it does return it
+        return Hero.instance;
+    }
+
+    // if it doesn't then create the hero
+    this.name = name;
+    Hero.instance = this;
+
+    return this;
+}
+
+var derekHero = new Hero("Derek");
+document.write("Are hero is " + derekHero.name + "<br />");
+
+// This won't change the name to Paul
+var paulHero = new Hero("Paul");
+document.write("Are hero is " + paulHero.name + "<br />");
 
 
  </script>
